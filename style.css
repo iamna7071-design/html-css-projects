@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 { font-style: italic;
+    text-shadow: 0 0 10px darkgreen, 0 0 20px greenyellow;
+
+}
+
+.dark-mode-btn {
+    background: #333;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.table-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th { background-color: #f8f8f8; }
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #222;
+    color: #ffffff;
+}
+
+body.dark-mode .container {
+    background-color: #333;
+}
+
+body.dark-mode table, 
+body.dark-mode th, 
+body.dark-mode td {
+    border-color: #555;
+    color: #ffffff;
+}
+
+body.dark-mode th {
+    background-color: #444;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+    color: #ffffff;
+}
+#dark-mode{
+    display:none;
+}
+
+.dark-mode-btn{
+    background:#333;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+#dark-mode:checked ~ .container{
+    background:#333;
+    color:white;
+}
+#dark-mode{
+    display:none;
+}
+
+#dark-mode:checked ~ .container{
+    background:black;
+    color:white;
+}
+
+#dark-mode:checked ~ .container table,
+#dark-mode:checked ~ .container td,
+#dark-mode:checked ~ .container th{
+    color:white;
+    border-color:white;
+}
